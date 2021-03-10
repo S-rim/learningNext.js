@@ -13,7 +13,9 @@ const Header = () => {
       <Link href="/about">
         <a style={linkStyle}>about</a>
       </Link>
-      <Link href="/ssr-test">
+
+      {/* prefetch : 데이터를 먼저 불러온다음에 라우팅을 시작함 */}
+      <Link prefetch href="/ssr-test">
         <a style={linkStyle}>SSR 테스트</a>
       </Link>
     </div>
